@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "N:/GitHub/programmeringsmetodik/Labb_1/Labb_1/out/build/x64-Debug/CMakeFiles/Labb_1.dir/embed.manifest"
