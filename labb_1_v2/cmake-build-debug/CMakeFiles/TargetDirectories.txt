@@ -1,0 +1,3 @@
+C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/cmake-build-debug/CMakeFiles/labb_1_v2.dir
+C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
