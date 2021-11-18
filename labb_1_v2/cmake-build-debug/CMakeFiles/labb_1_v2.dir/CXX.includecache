@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
+N:/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
 cstdlib
 -
 algorithm
 -
 
-C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/main.cpp
+N:/GitHub/programmeringsmetodik/labb_1_v2/main.cpp
 iostream
 -
 ctime
 -
 int_buffer.h
-C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
+N:/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
 

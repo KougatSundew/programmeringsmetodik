@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.cpp" "C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/cmake-build-debug/CMakeFiles/labb_1_v2.dir/int_buffer.cpp.obj"
-  "C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/main.cpp" "C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/cmake-build-debug/CMakeFiles/labb_1_v2.dir/main.cpp.obj"
+  "N:/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.cpp" "N:/GitHub/programmeringsmetodik/labb_1_v2/cmake-build-debug/CMakeFiles/labb_1_v2.dir/int_buffer.cpp.obj"
+  "N:/GitHub/programmeringsmetodik/labb_1_v2/int_sorted.cpp" "N:/GitHub/programmeringsmetodik/labb_1_v2/cmake-build-debug/CMakeFiles/labb_1_v2.dir/int_sorted.cpp.obj"
+  "N:/GitHub/programmeringsmetodik/labb_1_v2/main.cpp" "N:/GitHub/programmeringsmetodik/labb_1_v2/cmake-build-debug/CMakeFiles/labb_1_v2.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

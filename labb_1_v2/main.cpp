@@ -13,6 +13,9 @@ void f(int_buffer buff) {
     for(const int* i = buff.begin(); i != buff.end(); i++) {
         std::cout << *i << ", ";
     }
+    /*for(auto e: buff) {
+        std::cout << e << ", ";
+    }*/
 }
 
 int main() {

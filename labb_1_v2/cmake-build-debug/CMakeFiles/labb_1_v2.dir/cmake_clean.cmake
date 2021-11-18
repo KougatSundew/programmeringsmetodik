@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/labb_1_v2.dir/int_buffer.cpp.obj"
+  "CMakeFiles/labb_1_v2.dir/int_sorted.cpp.obj"
   "CMakeFiles/labb_1_v2.dir/main.cpp.obj"
   "labb_1_v2.exe"
   "labb_1_v2.exe.manifest"
