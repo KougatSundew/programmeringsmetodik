@@ -12,8 +12,9 @@ class int_buffer {
     size_t size;
     int *begin_ptr;
 
-    void swap(int_buffer rhs);
 public:
+    //Flytta till rätt position
+    void swap(int_buffer rhs);
     explicit int_buffer(size_t size);
     int_buffer(const int* source, size_t size);
     int_buffer(const int_buffer& rhs); // copy construct

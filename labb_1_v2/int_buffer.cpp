@@ -8,12 +8,12 @@ int_buffer::int_buffer(size_t size): size(size), begin_ptr(new int[size]) {
 
 }
 
-int_buffer::int_buffer(const int *source, size_t size): begin_ptr(const_cast<int *>(source)), size(size) {
-
+int_buffer::int_buffer(const int *source, size_t size):begin_ptr(new int[size]), size(size) {
+    std::copy(source, source + size, begin_ptr);
 }
 
-int_buffer::int_buffer(const int_buffer &rhs) {
-    std::copy(rhs.begin_ptr, rhs.begin_ptr + size, begin_ptr);
+int_buffer::int_buffer(const int_buffer &rhs):int_buffer(rhs.size) {
+    std::copy(rhs.begin_ptr, rhs.begin_ptr + rhs.size, begin_ptr);
 }
 
 int_buffer::int_buffer(int_buffer && rhs) noexcept:begin_ptr(nullptr), size(0) {
@@ -33,6 +33,7 @@ int_buffer &int_buffer::operator=(const int_buffer &rhs) {
 
 int_buffer &int_buffer::operator=(int_buffer && rhs) noexcept {
     swap(rhs);
+    return *this;
 }
 
 int &int_buffer::operator[](int index) {

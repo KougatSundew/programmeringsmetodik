@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+N:/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.cpp
+int_buffer.h
+N:/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
+
 N:/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
 cstdlib
 -
@@ -23,4 +27,14 @@ cstdlib
 -
 int_buffer.h
 N:/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
+
+N:/GitHub/programmeringsmetodik/labb_1_v2/main.cpp
+iostream
+-
+ctime
+-
+int_buffer.h
+N:/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
+int_sorted.h
+N:/GitHub/programmeringsmetodik/labb_1_v2/int_sorted.h
 
