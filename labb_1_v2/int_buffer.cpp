@@ -1,6 +1,7 @@
-//
-// Created by Joel Olofsson on 2021-11-15.
-//
+// Labb 1, programmeringsmetodik
+// Joel Olofsson (jool1904)
+// int_buffer.cpp, 2021-11-175- 2021-11-26
+// The definitions of int_buffer object
 
 #include "int_buffer.h"
 
@@ -8,12 +9,11 @@ int_buffer::int_buffer(size_t size): size(size), begin_ptr(new int[size]) {
 
 }
 
-int_buffer::int_buffer(const int *source, size_t size):begin_ptr(new int[size]), size(size) {
+int_buffer::int_buffer(const int *source, size_t size):int_buffer(size) {
     std::copy(source, source + size, begin_ptr);
 }
 
-int_buffer::int_buffer(const int_buffer &rhs):int_buffer(rhs.size) {
-    std::copy(rhs.begin_ptr, rhs.begin_ptr + rhs.size, begin_ptr);
+int_buffer::int_buffer(const int_buffer &rhs):int_buffer(rhs.begin_ptr, rhs.size) {
 }
 
 int_buffer::int_buffer(int_buffer && rhs) noexcept:begin_ptr(nullptr), size(0) {
@@ -67,4 +67,10 @@ const int *int_buffer::end() const {
 void int_buffer::swap(int_buffer rhs) {
     std::swap(rhs.begin_ptr, begin_ptr);
     std::swap(rhs.size, size);
+}
+
+void int_buffer::push_back(int value) {
+    int_buffer tmp_buff(begin(), size + 1);
+    tmp_buff[static_cast<int>(tmp_buff.get_size() - 1)] = value;
+    swap(tmp_buff);
 }
