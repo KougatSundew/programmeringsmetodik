@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+N:/GitHub/programmeringsmetodik/labb_2/Circle.h
+Shape.h
+N:/GitHub/programmeringsmetodik/labb_2/Shape.h
+
+N:/GitHub/programmeringsmetodik/labb_2/Rectangle.h
+Shape.h
+N:/GitHub/programmeringsmetodik/labb_2/Shape.h
+
+N:/GitHub/programmeringsmetodik/labb_2/Shape.h
+
+N:/GitHub/programmeringsmetodik/labb_2/main.cpp
+iostream
+-
+vector
+-
+ctime
+-
+Rectangle.h
+N:/GitHub/programmeringsmetodik/labb_2/Rectangle.h
+Circle.h
+N:/GitHub/programmeringsmetodik/labb_2/Circle.h
+
