@@ -3,3 +3,8 @@
 //
 
 #include "Circle.h"
+Circle::Circle(int radius, char *color):Shape(color), radius(radius) {}
+int Circle::getArea() {
+    return (M_PI*radius*radius);
+}
+

@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = N:\GitHub\programmeringsmetodik\labb_2
+CMAKE_SOURCE_DIR = "C:\Users\Joel Olofsson\Documents\GitHub\programmeringsmetodik\labb_2"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = N:\GitHub\programmeringsmetodik\labb_2\cmake-build-release
+CMAKE_BINARY_DIR = "C:\Users\Joel Olofsson\Documents\GitHub\programmeringsmetodik\labb_2\cmake-build-release"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start N:\GitHub\programmeringsmetodik\labb_2\cmake-build-release\CMakeFiles N:\GitHub\programmeringsmetodik\labb_2\cmake-build-release\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Joel Olofsson\Documents\GitHub\programmeringsmetodik\labb_2\cmake-build-release\CMakeFiles" "C:\Users\Joel Olofsson\Documents\GitHub\programmeringsmetodik\labb_2\cmake-build-release\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start N:\GitHub\programmeringsmetodik\labb_2\cmake-build-release\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Joel Olofsson\Documents\GitHub\programmeringsmetodik\labb_2\cmake-build-release\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -152,6 +152,30 @@ Circle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labb_2.dir\build.make CMakeFiles/labb_2.dir/Circle.cpp.s
 .PHONY : Circle.cpp.s
 
+Parallelepiped.obj: Parallelepiped.cpp.obj
+.PHONY : Parallelepiped.obj
+
+# target to build an object file
+Parallelepiped.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labb_2.dir\build.make CMakeFiles/labb_2.dir/Parallelepiped.cpp.obj
+.PHONY : Parallelepiped.cpp.obj
+
+Parallelepiped.i: Parallelepiped.cpp.i
+.PHONY : Parallelepiped.i
+
+# target to preprocess a source file
+Parallelepiped.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labb_2.dir\build.make CMakeFiles/labb_2.dir/Parallelepiped.cpp.i
+.PHONY : Parallelepiped.cpp.i
+
+Parallelepiped.s: Parallelepiped.cpp.s
+.PHONY : Parallelepiped.s
+
+# target to generate assembly for a file
+Parallelepiped.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labb_2.dir\build.make CMakeFiles/labb_2.dir/Parallelepiped.cpp.s
+.PHONY : Parallelepiped.cpp.s
+
 Rectangle.obj: Rectangle.cpp.obj
 .PHONY : Rectangle.obj
 
@@ -175,6 +199,30 @@ Rectangle.s: Rectangle.cpp.s
 Rectangle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labb_2.dir\build.make CMakeFiles/labb_2.dir/Rectangle.cpp.s
 .PHONY : Rectangle.cpp.s
+
+RoundedRectangle.obj: RoundedRectangle.cpp.obj
+.PHONY : RoundedRectangle.obj
+
+# target to build an object file
+RoundedRectangle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labb_2.dir\build.make CMakeFiles/labb_2.dir/RoundedRectangle.cpp.obj
+.PHONY : RoundedRectangle.cpp.obj
+
+RoundedRectangle.i: RoundedRectangle.cpp.i
+.PHONY : RoundedRectangle.i
+
+# target to preprocess a source file
+RoundedRectangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labb_2.dir\build.make CMakeFiles/labb_2.dir/RoundedRectangle.cpp.i
+.PHONY : RoundedRectangle.cpp.i
+
+RoundedRectangle.s: RoundedRectangle.cpp.s
+.PHONY : RoundedRectangle.s
+
+# target to generate assembly for a file
+RoundedRectangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labb_2.dir\build.make CMakeFiles/labb_2.dir/RoundedRectangle.cpp.s
+.PHONY : RoundedRectangle.cpp.s
 
 Shape.obj: Shape.cpp.obj
 .PHONY : Shape.obj
@@ -236,9 +284,15 @@ help:
 	@echo ... Circle.obj
 	@echo ... Circle.i
 	@echo ... Circle.s
+	@echo ... Parallelepiped.obj
+	@echo ... Parallelepiped.i
+	@echo ... Parallelepiped.s
 	@echo ... Rectangle.obj
 	@echo ... Rectangle.i
 	@echo ... Rectangle.s
+	@echo ... RoundedRectangle.obj
+	@echo ... RoundedRectangle.i
+	@echo ... RoundedRectangle.s
 	@echo ... Shape.obj
 	@echo ... Shape.i
 	@echo ... Shape.s

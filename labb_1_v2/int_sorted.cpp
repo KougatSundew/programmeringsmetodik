@@ -42,8 +42,8 @@ const int *int_sorted::begin() const {
 const int *int_sorted::end() const {
     return buff.end();
 }
-//TODO ✔: fixa så att merge vid insättning använder sig av antigen iterator eller [] index operatorn, istället för push_back.
-//TODO ✔: vid return så kommer det att bli en infinite loop, för att konstuerarn för int_sorted blir kallad se rad 24 - 26.
+//TODO [✔]: fixa så att merge vid insättning använder sig av antigen iterator eller [] index operatorn, istället för push_back.
+//TODO [✔]: vid return så kommer det att bli en infinite loop, för att konstuerarn för int_sorted blir kallad se rad 24 - 26.
 int_sorted int_sorted::merge(const int_sorted &merge_with) const {
     //Init the buffer with the total size of two buffers
     int_buffer tmp_merged_buffers(size() + merge_with.size());
@@ -76,7 +76,7 @@ int_sorted int_sorted::merge(const int_sorted &merge_with) const {
         it_ptr_b++;
         it_ptr_merged_buffer++;
     }
-    //for not making the program running in a infinite loop on return of int_sorted object, beacuse of the if statement on row 24 - 26
+    //for not making the program running in an infinite loop on return of int_sorted object, because of the if statement on row 24 - 26
     int_sorted sorted_buffer(nullptr, 0);
     sorted_buffer.buff = tmp_merged_buffers;
 

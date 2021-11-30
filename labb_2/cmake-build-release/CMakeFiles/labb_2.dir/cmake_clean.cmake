@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/labb_2.dir/Circle.cpp.obj"
+  "CMakeFiles/labb_2.dir/Parallelepiped.cpp.obj"
   "CMakeFiles/labb_2.dir/Rectangle.cpp.obj"
+  "CMakeFiles/labb_2.dir/RoundedRectangle.cpp.obj"
   "CMakeFiles/labb_2.dir/Shape.cpp.obj"
   "CMakeFiles/labb_2.dir/main.cpp.obj"
   "labb_2.exe"

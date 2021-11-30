@@ -52,7 +52,7 @@ int_buffer create_random_buffer(size_t number_of_elements, int max) {
     return tmp_buff;
 }
 /**
- * Function  for printing out the elements of a int_sorted object
+ * Function for printing out the elements of a int_sorted object
  * @param buff - int_buffer containing the sorted buffer for printing
  */
 void print_int_sorted(int_sorted sorted_buff) {
@@ -71,10 +71,10 @@ int main() {
     int arr[3] = {1,2,3};
 
     int_sorted sorted(arr, arr_size);
+    sorted.insert(120);
     sorted.insert(4);
     sorted.insert(1);
     sorted.insert(9);
-    sorted.insert(120);
 
     print_int_sorted(sorted);
     std::cout << "Is buffer sorted? " << (sorted.is_sorted() ? "true" : "false") << "\n";

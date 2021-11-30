@@ -6,21 +6,25 @@
 
 #IncludeRegexTransform: 
 
-N:/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
+C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
 cstdlib
 -
 algorithm
 -
 
-N:/GitHub/programmeringsmetodik/labb_1_v2/int_sorted.cpp
-iostream
--
-int_sorted.h
-N:/GitHub/programmeringsmetodik/labb_1_v2/int_sorted.h
-
-N:/GitHub/programmeringsmetodik/labb_1_v2/int_sorted.h
+C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/int_sorted.h
 cstdlib
 -
 int_buffer.h
-N:/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
+C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
+
+C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/main.cpp
+iostream
+-
+ctime
+-
+int_buffer.h
+C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/int_buffer.h
+int_sorted.h
+C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_1_v2/int_sorted.h
 

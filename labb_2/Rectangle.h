@@ -5,6 +5,7 @@
 #ifndef LABB_2_RECTANGLE_H
 #define LABB_2_RECTANGLE_H
 #include "Shape.h"
+#include "math.h"
 
 class Rectangle: public Shape {
     int height;
