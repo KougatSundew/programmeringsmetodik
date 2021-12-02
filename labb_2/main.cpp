@@ -9,7 +9,7 @@
 using namespace std;
 int Shape::numberOfObjects = 0;
 
-void GetData(vector<Shape*>* shapes);
+void GetData(vector<Shape*> shapes);
 
 int main() {
     vector<Shape*> shapes(5, nullptr);
@@ -19,17 +19,20 @@ int main() {
     shapes[3] = new Cylinder(20, 4, (char *) "black");
     shapes[4] = new Parallelepiped(10, 5, 20, (char*) "purple");
 
-    GetData(&shapes);
+    GetData(shapes);
+
     return 0;
 }
 
-void GetData(vector<Shape*>* shapes) {
-    double polymorphicArea = 0;
-    for(auto shape : *shapes) {
+void GetData(vector<Shape*> shapes) {
+    double totalArea = 0;
+    cout << "Colours: " << "\n";
+    for(auto shape : shapes) {
         if(shape) {
             cout << shape->getColor() << "\n";
-            polymorphicArea = polymorphicArea + shape->getArea();
+            totalArea += shape->getArea();
         }
     }
-    cout << "Polymorphic area: " << polymorphicArea << "\n";
+    cout << "Total area: " << totalArea << "\n";
+    cout << "Number of objects: " << shapes.at(0)->getNumberOfObjects() << "\n";
 }

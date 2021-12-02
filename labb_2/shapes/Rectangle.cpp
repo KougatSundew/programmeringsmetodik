@@ -8,3 +8,11 @@ Rectangle::Rectangle(double height, double width, char* color):Shape(color), hei
 double Rectangle::getArea() {
     return width*height;
 }
+
+double Rectangle::getHeight() {
+    return height;
+}
+
+double Rectangle::getWidth() {
+    return width;
+}

@@ -8,3 +8,7 @@ Cylinder::Cylinder(double height, double radius, char *color):height(height), Ci
 double Cylinder::getArea() {
     return (Circle::getArea()*height);
 }
+
+double Cylinder::getVolume() {
+    return Circle::getArea() * height;
+}

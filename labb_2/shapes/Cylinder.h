@@ -10,7 +10,8 @@ class Cylinder : public Circle {
     double height;
 public:
     Cylinder(double height, double radius, char* color);
-    double getArea();
+    double getArea() override;
+    double getVolume();
 };
 
 

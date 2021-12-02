@@ -8,10 +8,11 @@
 #include "Rectangle.h"
 
 class Parallelepiped : public Rectangle {
-    double height;
+    double depth;
 public:
-    Parallelepiped(double baseWidth, double baseHeight, double height, char* color);
-    double getArea();
+    Parallelepiped(double width, double height, double depth, char* color);
+    double getArea() override;
+    double getVolume();
 };
 
 

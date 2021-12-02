@@ -11,7 +11,7 @@ class RoundedRectangle : public Rectangle {
     double cornerRadius;
 public:
     RoundedRectangle(double height, double width, double cornerRadius, char* color);
-    double getArea();
+    double getArea() override;
 };
 
 

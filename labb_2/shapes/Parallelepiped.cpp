@@ -4,8 +4,13 @@
 
 #include "Parallelepiped.h"
 
-Parallelepiped::Parallelepiped(double baseWidth, double baseHeight, double height, char *color): Rectangle(baseHeight, baseWidth, color), height(height)  {}
+Parallelepiped::Parallelepiped(double width, double height, double depth, char *color): Rectangle(height, width, color), depth(depth)  {}
 
 double Parallelepiped::getArea() {
-    return Rectangle::getArea()*height;
+    return 2 * Rectangle::getArea() + 2 * getWidth() * depth + 2 * getHeight() * depth;
 }
+
+double Parallelepiped::getVolume() {
+    return Rectangle::getArea() * depth;
+}
+

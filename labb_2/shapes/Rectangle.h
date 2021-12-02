@@ -10,7 +10,9 @@ class Rectangle: public Shape {
     double height, width;
 public:
     Rectangle(double height, double width, char* color);
-    double getArea();
+    virtual double getArea();
+    double getHeight();
+    double getWidth();
 };
 
 

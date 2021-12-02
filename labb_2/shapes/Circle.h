@@ -10,7 +10,7 @@ class Circle: public Shape {
     double radius;
 public:
     Circle(double radius, char* color);
-    double getArea();
+    virtual double getArea();
 };
 
 
