@@ -8,10 +8,10 @@
 #include "Rectangle.h"
 
 class RoundedRectangle : public Rectangle {
-    int cornerRadius;
+    double cornerRadius;
 public:
-    RoundedRectangle(int height, int width, int cornerRadius, char* color);
-    int getArea() override;
+    RoundedRectangle(double height, double width, double cornerRadius, char* color);
+    double getArea();
 };
 
 

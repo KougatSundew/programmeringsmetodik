@@ -5,14 +5,12 @@
 #ifndef LABB_2_RECTANGLE_H
 #define LABB_2_RECTANGLE_H
 #include "Shape.h"
-#include "math.h"
 
 class Rectangle: public Shape {
-    int height;
-    int width;
+    double height, width;
 public:
-    Rectangle(int height, int width, char* color);
-    int getArea();
+    Rectangle(double height, double width, char* color);
+    double getArea();
 };
 
 

@@ -5,12 +5,12 @@
 #ifndef LABB_2_CIRCLE_H
 #define LABB_2_CIRCLE_H
 #include "Shape.h"
-#include "math.h"
+
 class Circle: public Shape {
-    int radius = 0;
+    double radius;
 public:
-    Circle(int radius, char* color);
-    int getArea();
+    Circle(double radius, char* color);
+    double getArea();
 };
 
 

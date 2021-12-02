@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" "C:\Users\Joel Olofsson\Documents\GitHub\programmeringsmetodik\labb_2"
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" N:\GitHub\programmeringsmetodik\labb_2
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_2/cmake-build-debug
+-- Build files have been written to: N:/GitHub/programmeringsmetodik/labb_2/cmake-build-debug
