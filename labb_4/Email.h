@@ -25,38 +25,41 @@ public:
     Email(std::string who = "", std::string date = "", std::string subject = "");
     friend std::ostream& operator<<(std::ostream& stream, const Email& rhs);
 };
-
+/**
+ * Function object for comparing after the author
+ */
 struct CompWhoDateSubject {
     bool operator()(const Email& lhs, const Email& rhs) {
         if(lhs.who != rhs.who)
             return lhs.who < rhs.who;
         if(lhs.date != rhs.date)
             return lhs.date < rhs.date;
-        if(lhs.subject != rhs.subject)
-            return lhs.subject < rhs.subject;
+        return lhs.subject < rhs.subject;
     }
 };
 
-
+/**
+ * Function object for comparing after the date
+ */
 struct CompDateWhoSubject {
     bool operator()(const Email& lhs, const Email& rhs) {
         if(lhs.date != rhs.date)
             return lhs.date < rhs.date;
         if(lhs.who != rhs.who)
             return lhs.who < rhs.who;
-        if(lhs.subject != rhs.subject)
-            return lhs.subject < rhs.subject;
+        return lhs.subject < rhs.subject;
     }
 };
-
+/**
+ * Function object for comparing after the subject
+ */
 struct CompSubjectWhoDate {
     bool operator()(const Email& lhs, const Email& rhs) {
         if(lhs.subject != rhs.subject)
             return lhs.subject < rhs.subject;
         if(lhs.who != rhs.who)
             return lhs.who < rhs.who;
-        if(lhs.date != rhs.date)
-            return lhs.date < rhs.date;
+        return lhs.date < rhs.date;
     }
 };
 

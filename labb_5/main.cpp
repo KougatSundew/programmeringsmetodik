@@ -14,6 +14,9 @@ struct MyPrint {
     void operator()(const CPU& cpu) {
         std::cout << cpu.getName()<< ", " << cpu.getFreq() << " Ghz" << "\n";
     }
+    void operator()(const double& freq) {
+        std::cout << freq << " Ghz" << "\n";
+    }
 };
 
 struct Greater {
@@ -30,6 +33,21 @@ struct MyBinOp {
     MyBinOp(size_t size):size(size) {};
     double operator()(double value, const CPU& cpu) {
         return value += cpu.getFreq() / size;
+    }
+};
+
+struct MyUnOp {
+    double operator()(const CPU& cpu) {
+        return cpu.getFreq();
+    }
+};
+
+struct MyFunc {
+    double mean;
+public:
+    MyFunc(double mean):mean(mean){};
+    double operator()(const double value) {
+        return value - mean;
     }
 };
 
@@ -85,6 +103,17 @@ int main() {
     auto mean = std::accumulate(cpuVector.begin(), cpuVector.end(), 0.0, binOp);
     std::cout << "mean CPU freq: " << mean << std::endl;
     std::cout << "\n";
+
+    std::cout << "(7 - 8) - Use std::transform, unary operation and replacing old values" << "\n";
+    std::vector<double> v2(cpuVector.size());
+    std::transform(cpuVector.begin(), cpuVector.end(), v2.begin(), MyUnOp());
+
+    MyFunc func(mean);
+    std::transform(v2.begin(),v2.end(), v2.begin(),func);
+
+    std::cout << "(9) - New sorted vector v2 with the new frequencies" << "\n";
+    std::sort(v2.begin(), v2.end());
+    std::for_each(v2.begin(), v2.end(), printer);
 
     return 0;
 }

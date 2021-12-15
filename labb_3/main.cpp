@@ -8,13 +8,18 @@
 #include <string>
 #include <iomanip>
 #include "p_queue.h"
-
+/**
+ * Struct order with price and fullname
+ */
 struct Order {
     Order(int price, std::string fullname): price(price), fullname(fullname) {}
 
     int price;
     std::string fullname;
 };
+/**
+ * Function object for defining how to compare two orders
+ */
 struct less {
     bool operator()(const Order& a, const Order& b) {
         return a.price < b.price;

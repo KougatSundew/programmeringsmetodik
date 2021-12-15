@@ -37,5 +37,7 @@ int main() {
     inbox.SortSubject();
     std::cout << "Sorted on subject:" << "\n";
     show(inbox.emails());
+
+
     return 0;
 }

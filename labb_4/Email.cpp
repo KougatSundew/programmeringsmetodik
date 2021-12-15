@@ -9,8 +9,19 @@
 //
 
 #include "Email.h"
+/**
+ * Constructor
+ * @param who - author of the mail with type string
+ * @param date - date of type string
+ * @param subject - subject of type string
+ */
 Email::Email(std::string who, std::string date, std::string subject):who(who), date(date), subject(subject) {}
-
+/**
+ * Operator overload on << for class Email
+ * @param stream - out stream
+ * @param rhs - right hand side value of type const Email&
+ * @return - returns out stream
+ */
 std::ostream& operator<<(std::ostream& stream, const Email& rhs) {
     stream << "Subject: " << rhs.subject << "\n"
            << "From: " << rhs.who << "\n"

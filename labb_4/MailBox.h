@@ -18,6 +18,7 @@
 class MailBox {
     std::vector<Email> inbox;
 public:
+    //Default constructor
     MailBox() = default;
 
     //Getters

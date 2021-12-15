@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_3/main.cpp
+iostream
+-
+ctime
+-
+string
+-
+iomanip
+-
+p_queue.h
+C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_3/p_queue.h
+
+C:/Users/Joel Olofsson/Documents/GitHub/programmeringsmetodik/labb_3/p_queue.h
+vector
+-
+algorithm
+-
+functional
+-
+functional
+-
+
